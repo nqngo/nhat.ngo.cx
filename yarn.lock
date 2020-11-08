@@ -1547,6 +1547,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@headlessui/react@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@headlessui/react@npm:0.2.0"
+  peerDependencies:
+    react: ">=16"
+  checksum: c89d99a08cf8b9eb227d7890bbabcfae052ab72a9db67ec0a13f186d46dccc54f438503faf6425dd02440ffd9d80399ffb8d269d7372ca59e79156d9b6fb6bb9
+  languageName: node
+  linkType: hard
+
 "@next/env@npm:9.5.5":
   version: 9.5.5
   resolution: "@next/env@npm:9.5.5"
@@ -5330,11 +5339,12 @@ fsevents@~2.1.2:
   resolution: "nhat.ngo.cx@workspace:."
   dependencies:
     "@fullhuman/postcss-purgecss": ^3.0.0
+    "@headlessui/react": ^0.2.0
     next: ^9.5.5
     postcss-preset-env: ^6.7.0
     react: 16.14.0
     react-dom: 16.14.0
-    sass: ^1.27.0
+    sass: ^1.29.0
     styled-jsx: 3.3.0
     tailwindcss: ^1.9.6
   languageName: unknown
@@ -6893,14 +6903,14 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.27.0":
-  version: 1.27.0
-  resolution: "sass@npm:1.27.0"
+"sass@npm:^1.29.0":
+  version: 1.29.0
+  resolution: "sass@npm:1.29.0"
   dependencies:
     chokidar: ">=2.0.0 <4.0.0"
   bin:
     sass: sass.js
-  checksum: db4342b13bbcc5e0f13c1d9139f31c48f9c5a03bdb1c8d8ef7b47d063f5c333a2b69642bd489501cd756f4d0d1da43ee77127938cf9743cc39839952319a705e
+  checksum: 8114e0c4e73be695d25030f51bff8da0151f335b135869e926d39e21688cd81a6be0368a332caec40425e64df499bd34962aa4ca59926a6bd0e11aa43ac306d9
   languageName: node
   linkType: hard
 

@@ -25,9 +25,17 @@ export default function Index() {
 
       <Header location="home"></Header>
       <main className="my-12">
-        <h1 className="text-red-100 text-2x1">
-          Hello there!
-        </h1>
+        <div className="text-indigo-100 text-2x1">
+          Hi. I'm Nhat Ngo.
+        </div>
+        <div className="text-indigo-100 text-2x1 flex">
+          <div>
+            I am 
+          </div>
+          <div className="typewriter">
+            a DevOps engineer.
+          </div>
+        </div>
       </main>
     </div>
   )

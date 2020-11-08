@@ -9,15 +9,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^0.2.0",
     "next": "^9.5.5",
     "react": "16.14.0",
     "react-dom": "16.14.0",
-    "sass": "^1.27.0",
     "styled-jsx": "3.3.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
+    "sass": "^1.29.0",
     "tailwindcss": "^1.9.6"
   }
 }
