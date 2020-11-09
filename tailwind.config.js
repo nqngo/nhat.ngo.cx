@@ -1,9 +1,18 @@
 module.exports = {
-  future: {},
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        hamburger: "spin 2s ease-in-out 1",
+      },
+    },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+  ],
 }
