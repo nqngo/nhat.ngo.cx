@@ -1,17 +1,3 @@
-// import Container from '@material-ui/core/Container'
-// import Typography from '@material-ui/core/Typography'
-// import Link from 'next/link'
-
-// export default function Index() {
-//   return (
-//     <Container maxWidth="sm">
-//     <Typography variant="h4" component="h1" gutterBottom>
-//        Next.js example
-//      </Typography>
-//      <Link href="/about"><a>About me.</a></Link>
-//     </Container>
-//   )
-// }
 import React from 'react'
 import Head from 'next/head'
 import Header from '../components/header' 
@@ -20,21 +6,21 @@ export default function Index() {
   return (
     <div>
       <Head>
-        <title>Test Next App</title>
+        <title>Nhat Ngo</title>
       </Head>
 
       <Header location="home"></Header>
-      <main className="my-12">
-        <div className="text-indigo-100 text-2x1">
+      <main className="p-20 items-center justify-center text-indigo-100 text-4xl md:text-7xl">
+        <div className="">
           Hi. I'm Nhat Ngo.
         </div>
-        <div className="text-indigo-100 text-2x1 flex">
-          <div>
-            I am 
-          </div>
-          <div className="typewriter">
+        <div className="">
+          <span>
+            I am{'\u00A0'}
+          </span>
+          <span className="typewriter">
             a DevOps engineer.
-          </div>
+          </span>
         </div>
       </main>
     </div>
