@@ -1,4 +1,4 @@
-import "../styles/tailwind.sass"
+import "../styles/manifest.sass"
 
 export default function App({ Component, pageProps }) {
   return (
