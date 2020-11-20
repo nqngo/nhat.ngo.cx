@@ -7,8 +7,7 @@ import LinkedInLogo from "../assets/svg/linkedin.svg"
 
 export default function Header({ location }) {
   const [showBurger, setshowBurger] = useState(false)
-  const [inAnimation, setAnimation] = useState(false)
-
+ 
   return (
     <nav>
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -17,11 +16,12 @@ export default function Header({ location }) {
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Hamburger button */}
             <button
-              onClick={() => setshowBurger(!showBurger) && setAnimation(!inAnimation)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
+              onClick={() => setshowBurger(!showBurger)}
+              className={` ${showBurger ? "nav-open" : ""} inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out`}
               aria-label="Main menu"
-              aria-expanded="false"
+              aria-expanded={showBurger}
             >
+
               {/* Burger */}
                 <svg
                   className={`h-6 w-6 ${showBurger ? "hidden" : "block"}`}
@@ -65,25 +65,25 @@ export default function Header({ location }) {
                   href="#"
                   className="px-3 py-2 rounded-md text-sm font-medium leading-5 text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
                 >
-                  Dashboard
+                  Home
                 </a>
                 <a
                   href="#"
                   className="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
                 >
-                  Team
+                  Computing
                 </a>
                 <a
                   href="#"
                   className="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
                 >
-                  Projects
+                  Cooking
                 </a>
                 <a
                   href="#"
                   className="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
                 >
-                  Calendar
+                  About
                 </a>
               </div>
             </div>
@@ -127,19 +127,19 @@ export default function Header({ location }) {
                 href="#"
                 className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
               >
-                Posts
+                Computing
+              </a>
+              <a
+                href="#"
+                className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+              >
+                Cooking
               </a>
               <a
                 href="#"
                 className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
               >
                 About
-              </a>
-              <a
-                href="#"
-                className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-              >
-                Calendar
               </a>
             </div>
           </div>

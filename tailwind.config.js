@@ -4,12 +4,9 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: [],
+  darkMode: 'class',
   theme: {
-    extend: {
-      animation: {
-        hamburger: "spin 2s ease-in-out 1",
-      },
-    },
+    extend: {},
   },
   variants: {},
   plugins: [
