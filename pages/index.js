@@ -4,13 +4,13 @@ import Header from '../components/header'
 
 export default function Index() {
   return (
-    <div>
+    <div className="h-full">
       <Head>
         <title>Nhat Ngo</title>
       </Head>
 
       <Header location="home"></Header>
-      <main className="p-20 items-center justify-center text-indigo-100 text-4xl md:text-7xl">
+      <main className="h-5/6 p-20 items-center justify-center text-indigo-100 text-4xl md:text-7xl">
         <div className="">
           Hi. I'm Nhat Ngo.
         </div>

@@ -1,7 +1,7 @@
-import Link from "next/link"
 import { Transition } from "@headlessui/react"
 import { useState } from "react"
 
+import MainLogo from "../assets/svg/programmer.svg"
 import GithubLogo from "../assets/svg/github.svg"
 import LinkedInLogo from "../assets/svg/linkedin.svg"
 
@@ -24,7 +24,7 @@ export default function Header({ location }) {
 
               {/* Burger */}
                 <svg
-                  className={`h-6 w-6 ${showBurger ? "hidden" : "block"}`}
+                  className={`h-8 w-8 ${showBurger ? "hidden" : "block"}`}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -34,7 +34,7 @@ export default function Header({ location }) {
                 </svg>
               {/* X */}
               <svg
-                className={`h-6 w-6 ${showBurger ? "block" : "hidden"}`}
+                className={`h-8 w-8 ${showBurger ? "block" : "hidden"}`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -46,42 +46,33 @@ export default function Header({ location }) {
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             {/* Logo */}
-            <div className="flex-shrink-0">
-              <img
-                className="block lg:hidden h-8 w-auto"
-                src="https://tailwindui.com/img/logos/v1/workflow-mark-on-dark.svg"
-                alt="Workflow logo"
-              />
-              <img
-                className="hidden lg:block h-8 w-auto"
-                src="https://tailwindui.com/img/logos/v1/workflow-logo-on-dark.svg"
-                alt="Workflow logo"
-              />
+            <div className="flex-shrink-0 p-0.5 rounded-full bg-gradient-to-br from-indigo-500 via-yellow-400 to-red-800">
+              <MainLogo className="block h-10 w-10 bg-indigo-900 rounded-full transform hover:rotate-12 hover:scale-105" />
             </div>
             {/* Desktop menu */}
             <div className="hidden sm:block sm:ml-6">
-              <div className="flex">
+              <div className="flex pt-1">
                 <a
                   href="#"
-                  className="px-3 py-2 rounded-md text-sm font-medium leading-5 text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                  className="px-3 py-2 rounded-md text-base font-medium leading-5 text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
                 >
                   Home
                 </a>
                 <a
                   href="#"
-                  className="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                  className="ml-4 px-3 py-2 rounded-md text-base font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
                 >
                   Computing
                 </a>
                 <a
                   href="#"
-                  className="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                  className="ml-4 px-3 py-2 rounded-md text-base font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
                 >
                   Cooking
                 </a>
                 <a
                   href="#"
-                  className="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                  className="ml-4 px-3 py-2 rounded-md text-base font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
                 >
                   About
                 </a>
@@ -94,13 +85,13 @@ export default function Header({ location }) {
             <a href="https://github.com/nqngo" target="_blank" title="My Github"
               className="p-1 border-2 border-transparent text-gray-400 rounded-full hover:text-white focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
             >
-              <GithubLogo className="h-6 w-6" fill="currentColor" stroke="currentColor" />
+              <GithubLogo className="h-8 w-8" fill="currentColor" stroke="currentColor" />
             </a>
             <a href="https://www.linkedin.com/in/nqngo/" target="_blank" title="My LinkedIn"
               className="p-1 border-2 border-transparent text-gray-400 rounded-full hover:text-white focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
               aria-label="Github"
             >
-              <LinkedInLogo className="h-6 w-6" fill="currentColor" stroke="currentColor" />
+              <LinkedInLogo className="h-8 w-8" fill="currentColor" stroke="currentColor" />
             </a>
             <div className="ml-3 relative"></div>
           </div>
